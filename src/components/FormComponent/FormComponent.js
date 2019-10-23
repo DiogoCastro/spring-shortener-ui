@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './FormComponent.css';
+
 export default class FormComponent extends Component {
     state = {
         url: ''
@@ -19,17 +21,18 @@ export default class FormComponent extends Component {
                 onSubmit={this.onSubmit}
                 className="form-inline mt-5">
                 <input
-                    type="text"
+                    type="url"
                     name="url"
+                    required
                     className="form-control"
                     value={this.state.url}
                     onChange={this.onChange}
-                    placeholder="URL"
+                    placeholder="URL (https://exemplo.com)"
                 />
                 <button
                     type="submit"
                     value="submit"
-                    className="btn btn-primary ml-3">Inserir</button>
+                    className="btn btn-primary ml-3 col btn-insert">Inserir</button>
             </form>
         )
     }

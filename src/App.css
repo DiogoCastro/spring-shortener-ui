@@ -18,6 +18,16 @@
   color: #928dbc;
 }
 
+.alert {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.modalBody {
+  padding-left: 15% !important;
+}
+
 .button-actions {
   margin-left: 15px;
   border: none;
