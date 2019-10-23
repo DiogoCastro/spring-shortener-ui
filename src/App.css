@@ -17,3 +17,8 @@
 .App-link {
   color: #928dbc;
 }
+
+.button-actions {
+  margin-left: 15px;
+  border: none;
+}
